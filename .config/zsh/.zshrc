@@ -100,16 +100,4 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-r
 
-
-# Load Auto suggestions
-#source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-#ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
-
 source /usr/share/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
-
-export LIBTORCH=/usr/local/libtorch
-export LD_LIBRARY_PATH=${LIBTORCH}/lib
-
-# opencode
-export PATH=/home/anand.dubey/.opencode/bin:$PATH
