@@ -1,0 +1,53 @@
+# Verbose mode for general commands
+alias cp='cp -rv --reflink=auto'
+alias mv='mv -iv'
+alias rm='rm -v'
+alias rm-r='rm -r'
+alias ln='ln -v'
+alias chmod="chmod -c"
+alias chown="chown -c"
+alias mkdir="mkdir -v"
+
+# Colorize commands when possible.
+alias ls="eza --icons --color=always --group-directories-first -al"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+
+# Open eBooks
+alias rcpp="okular Documents/eBooks/primer.pdf > /dev/null 2>&1 & disown"
+alias ros="okular Documents/eBooks/CSE-Core/OS\ Concepts\ Galvin.pdf > /dev/null 2>&1 & disown"
+
+# Bind vim to neovim
+alias vi="nvim"
+alias v="nvim"
+alias sv="sudo nvim"
+
+# Lazygit
+alias lg="lazygit"
+
+# Opencode
+alias oc="opencode"
+
+# Zellij
+alias jj="zellij"
+
+# Zellij
+alias kc="kubectl"
+
+# rust-gdb
+alias rgdb="rust-gdb"
+
+# Use ptpython
+alias py="ptpython"
+
+# Replace commands with better alternatives
+alias cat="bat --style header --style snip --style changes --style header"
+alias la="eza --icons --color=always --group-directories-first -a"
+alias ll="eza --icons --color=always --group-directories-first -l"
+alias l.="eza -a | egrep '^\.'"
+alias top="btop"
+# Get Clutter-free Hardware info
+alias hw="hwinfo --short"
+
+#Get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"

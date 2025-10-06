@@ -1,0 +1,21 @@
+#==============================================================================
+#                                                                             !
+#                           Shell config                                        !
+#                       @author:- anandubey                                   !
+#                                                                             !
+#==============================================================================
+
+
+# Adds `~/.local/bin` to $PATH
+export PATH="$PATH:$HOME/.local/bin"
+export ZDOTDIR=$HOME/.config/zsh
+
+# Default programs:
+export EDITOR="nvim"
+export TERMINAL="wezterm"
+export BROWSER="brave-browser"
+
+# XDG stuff
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
